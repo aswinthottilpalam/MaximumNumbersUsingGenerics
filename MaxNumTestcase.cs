@@ -36,5 +36,28 @@ namespace MaximumProblemUsingGenerics
                 int maxNumber = 40;
                 Assert.AreEqual(maxNumber, result);
             }
+
+        // Given the maximum float number first position.
+      
+        public void GivenMaxFloatNumber_FirstPosition()
+        {
+            double result = MaxNumCheck.MaximumFloatNumber(55.5, 20.2, 33.3);
+            double maxNumber = 55.5;
+            Assert.AreEqual(maxNumber, result);
         }
+        // Given the maximum float number second position.
+        public void GivenMaxFloatNumber_SecondPosition()
+        {
+            double result = MaxNumCheck.MaximumFloatNumber(20.2, 55.5, 33.3);
+            double maxNumber = 55.5;
+            Assert.AreEqual(maxNumber, result);
+        }
+        // Given the maximum float number third position.
+        public void GivenMaxFloatNumber_ThirdPosition()
+        {
+            double result = MaxNumCheck.MaximumFloatNumber(20.2, 33.3, 55.5);
+            double maxNumber = 55.5;
+            Assert.AreEqual(maxNumber, result);
+        }
+    }
 }
